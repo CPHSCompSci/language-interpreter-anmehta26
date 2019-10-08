@@ -25,12 +25,12 @@ public class Main {
 		String decodedWord = "";
 		
 		for (int i = 0; i < word.length()-2; i++) {
-			if (word.substring(i, i+3).equals("ent") && (word.charAt(i-1) == 'a' || word.charAt(i-1) == 'e' || word.charAt(i-1) == 'i' || word.charAt(i-1) == 'o' || word.charAt(i-1) == 'u')) {
+			if (word.substring(i, i+3).equals("ent") && (word.charAt(i-1) == 'a' || word.charAt(i-1) == 'e' || word.charAt(i-1) == 'i' || word.charAt(i-1) == 'o' || word.charAt(i-1) == 'u' || word.charAt(i-1) == 'A' || word.charAt(i-1) == 'E' || word.charAt(i-1) == 'I' || word.charAt(i-1) == 'O' || word.charAt(i-1) == 'U')) {
 				decodedWord = word.replace(word.substring(i, i+3), "");
 			}
 		}
 		for (int i = 0; i < word.length()-3; i++) {
-			if (word.substring(i, i+4).equals("ingy") && !(word.charAt(i-1) == 'a' || word.charAt(i-1) == 'e' || word.charAt(i-1) == 'i' || word.charAt(i-1) == 'o' || word.charAt(i-1) == 'u')) {
+			if (word.substring(i, i+4).equals("ingy") && !(word.charAt(i-1) == 'a' || word.charAt(i-1) == 'e' || word.charAt(i-1) == 'i' || word.charAt(i-1) == 'o' || word.charAt(i-1) == 'u' || word.charAt(i-1) == 'A' || word.charAt(i-1) == 'E' || word.charAt(i-1) == 'I' || word.charAt(i-1) == 'O' || word.charAt(i-1) == 'U')) {
 				decodedWord = decodedWord.replace(word.substring(i, i+4), "");
 			}
 		}
